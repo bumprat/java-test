@@ -1,0 +1,6 @@
+cd PrintArrayTest
+find . -type f -name "*.class" -delete
+find . -type f -name "*.so" -delete
+g++ -shared -o libthirdparty.so -fPIC third_party_library.cpp
+javac -cp jna.jar src/main/java/com/example/*.java
+java -cp src/main/java:.:jna.jar com.example.App
