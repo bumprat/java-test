@@ -7,10 +7,15 @@ extern "C" {
         }
         
         for (unsigned int i = 0; i < length; ++i) {
-            std::cout << buffer[i];
+            std::cout << int(buffer[i]) << " | ";
         }
         std::cout << std::endl;
-        
+        for (unsigned int i = 0; i < length; ++i) {
+            std::cout << buffer[i] << " | ";
+        }
+        std::cout << std::endl;
+        std::cout << length << std::endl;
+        std::cout << buffer << std::endl;
         return 999;
     }
 }

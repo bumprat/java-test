@@ -3,7 +3,7 @@ package com.example;
 public class App {
     public static void main(String[] args) {
         // UTF-8 encoded string "Hello"
-        String message = "Hello";
+        String message = "你好" +'\0';
         byte[] utf8Bytes = message.getBytes(java.nio.charset.StandardCharsets.UTF_8);
 
         // Call the native method
